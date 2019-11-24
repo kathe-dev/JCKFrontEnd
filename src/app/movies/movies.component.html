@@ -1,0 +1,11 @@
+<div class="movies">
+    <li *ngFor="let movie of movies">
+        <a [routerLink]="['/detail', movie.id]">
+            <img [src]="this.imgURL+movie.backdrop_path" class="card-img-top" [alt]="movie.title">
+            <p>{{movie.vote_average}}</p>
+            <div class="card-body">
+                <h5 class="card-title">{{movie.title}}</h5>
+            </div>
+        </a>
+    </li>
+</div>

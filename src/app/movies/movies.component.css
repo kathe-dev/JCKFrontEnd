@@ -1,0 +1,22 @@
+.movies {
+    list-style-type: none;
+    margin: 2rem;
+}
+
+.movies li {
+    float: left;
+}
+
+.movies li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 70px;
+    text-decoration: none;
+    transition: all 0.2s linear;
+}
+
+.movies li a:hover {
+    background-color: darkred;
+    transform: scale(1.1);
+}

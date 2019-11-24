@@ -1,0 +1,19 @@
+<div id="movie-component" *ngIf='movie'>
+    <h2>{{movie.title}}</h2>
+    <img [src]="this.imgURL+movie.backdrop_path" [alt]="movie.title">
+    <p>{{movie.overview}}</p>
+    <p>Lenguaje: {{movie.original_language}}</p>
+    <br>
+    <br>
+
+    <h2>Peliculas relacionadas: </h2>
+    <ul *ngFor="let similar of similarMovies; let i=index">
+        <li (click)="goMovie(similar.id)" *ngIf="i<5">
+            <a [routerLink]="['/detail', similar.id]">{{similar.title}} </a>
+        </li>
+    </ul>
+    <h2> Elenco: </h2>
+    <ul *ngFor="let actor of cast">
+        <a>{{actor.name}} </a>
+    </ul>
+</div>

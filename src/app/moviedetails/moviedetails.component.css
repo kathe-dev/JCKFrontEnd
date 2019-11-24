@@ -1,0 +1,30 @@
+h2 {
+    padding: 2em;
+}
+
+img {
+    float: left;
+    padding: 3em;
+}
+
+p {
+    padding: 2em;
+}
+
+ul li {
+    display: inline-block;
+    text-decoration: none;
+}
+
+ul li a {
+    color: whitesmoke;
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    background: #a04040;
+}
